@@ -1,0 +1,10 @@
+frase = '   Curso em video python'
+print(frase.replace('Python', 'JAVA'))
+print(frase.upper())
+print(frase.lower())
+print(frase.title())
+print(frase.strip())
+print(frase.rstrip())
+print(frase.lstrip())
+print(frase.split())
+print('-'.join(frase))

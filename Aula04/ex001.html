@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google</title>
+    <style>
+        .logo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 80pt;
+            color: white;
+            font-style: italic, arial, sans-serif;
+            }
+        html{
+            background-color: rgb(144, 144, 199);
+        }
+        #txt{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: left;
+            border: solid rgba(255, 255, 255, 0.01);
+            border-radius: 14px;
+            padding-left: 10px 0 0 10px;
+            
+            
+        }
+        .pesquisar{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            margin-top: 40px;
+            border: solid rgb(162, 221, 218, 0.01);
+            border-radius: 16px;
+            font-style: Arial, Sans-serif;
+            padding-left: 25px;
+            padding-right: 25px;
+            background-color: white;
+            color: black;
+
+        }
+        #res{
+            text-align: center;
+            margin-top: 10px;
+            font-size: 50pt;
+            font-style:italic;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1 class = 'logo'> É par ou ímpar?</h1>
+    <input type="text" name="txt" id="txt">
+    <input type="button" value="pesquisar" class="pesquisar" onclick="calcular()">
+    <div id="res"></div>
+    
+    
+    
+    <script>
+       function calcular(){
+        var res = document.getElementById('res')
+        var numero = document.querySelector('input#txt')
+       var n1 = Number(numero.value)
+       if (n1 % 2 === 0){
+        res.innerHTML += 'seu numero é par!'
+       }else {
+        res.innerHTML += 'seu numero é impar!'
+       }
+       }
+       
+    </script>
+    
+</body>
+</html>

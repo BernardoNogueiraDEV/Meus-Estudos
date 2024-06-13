@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Governo</title>
+</head>
+<body>
+    <h1>
+        Eleição 2024
+    </h1>
+    Qual a sua idade? <input type="text" name="txt" id="txt">
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res"></div>
+    <script>
+        
+        function calcular(){
+            var idade = document.querySelector('input#txt')
+        idade = Number(txt.value)
+        var res = document.getElementById('res')
+            if (idade < 16){
+                res.innerHTML += `Voçê tem ${idade} anos, portanto não vota!`
+            }else if(idade < 18 || idade > 65){
+                res.innerHTML += `Voçê tem ${idade} anos, portato voto opicional!`
+            }else {
+                res.innerHTML += `Voçê tem ${idade} anos, portanto seu voto é obrigatório!`
+            }
+        }
+    </script>
+</body>
+</html>

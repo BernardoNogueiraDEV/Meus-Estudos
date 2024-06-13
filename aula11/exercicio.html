@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+<body>
+    <h1><strong>RADAR</strong></h1>
+    Voçê passou à <input type="number" name="vel" id="txtvel">Km/h
+    <input type="button" value="enviar" onclick="calcular()">
+    <div id="res"></div>
+    <script>
+        
+        function calcular(){
+            var vel = window.document.querySelector('input#txtvel')
+            var res = window.document.querySelector('div#res')
+            var v = Number(txtvel.value)
+            if(v < 100){
+                res.innerHTML += `<p>${v}Km/h está na velocidade adequada</p>`
+            }else {
+                res.innerHTML += `<p>${v}Km/h excede o limite de velocidade, voçê foi <strong>MULTADO!</strong></p>`
+
+            }
+        }
+    </script>
+
+
+</body>
+</html>
