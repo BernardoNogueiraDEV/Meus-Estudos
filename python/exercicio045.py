@@ -13,6 +13,10 @@ def jogar():
             Papel
             Tesoura
             ''').lower()
+        jo = input('JO')
+        ken = input('KEN')
+        po = input('PO!!!')
+        
 
         if pergunta not in lista:
             print('Você digitou algo errado, tente novamente')
